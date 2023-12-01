@@ -6,7 +6,7 @@ export default function index() {
     <div className="main-section">
       <div className=" my-5 d-flex align-items-center justify-content-center flex-column ">
         <img
-          src={getImgUrl("/elkood.png")}
+          src={getImgUrl('/Teeth.png')}
           className="img-fluid my-3"
           width={350}
         />
