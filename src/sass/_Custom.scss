@@ -1,0 +1,42 @@
+.main-head {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 6px;
+    border-radius: 27px;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $primary;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 3px;
+    bottom: -15px;
+    border-radius: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--light);
+  }
+}
+
+.validation-msg {
+  color: $danger;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 4px;
+}
+
+.alert-msg {
+  position: fixed;
+  right: 5px !important;
+  bottom: 0px !important;
+  z-index: 100000 !important;
+}

@@ -1,0 +1,50 @@
+.side-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  color: $primary;
+  transition: 0.3s linear;
+
+  .side-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    transition: 0.3s linear;
+    text-transform: uppercase;
+    font-weight: 800;
+    // p {
+    //   color: gray;
+    // }
+    &:hover {
+      background-color: var(--dark);
+      p {
+        color: $primary !important;
+      }
+    }
+
+    &.active {
+      background-color: var(--dark);
+      p {
+        color: $primary !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .side-link {
+    align-items: center;
+    justify-content: center !important;
+    p {
+      display: none;
+    }
+  }
+}
